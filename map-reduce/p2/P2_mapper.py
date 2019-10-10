@@ -7,5 +7,5 @@ sums = {}
 
 for line in sys.stdin:
     line = re.sub( r'^\W+|\W+$', '', line )
-    words = re.split(r' ', line)[0]
+    words = re.split(r' ', line)[3]
     print( words.lower() + "\t1" )
