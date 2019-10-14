@@ -2,8 +2,6 @@
 
 import sys
 
-print("Lines:")
-
 for line in sys.stdin:
     key, value = line.split( '\t' )
-    print(value)
+    print(key + '\t' + value)

@@ -12,3 +12,5 @@ for line in sys.stdin:
     mass = words[4]
 
     if meteorite_type[0] != '"' and mass != "" and mass != "0": print( meteorite_type + "\t" + mass )
+
+    # ./P5_mapper.py < Meteorite_Landings.csv | sort -V | ./P5_reducer.py

@@ -10,9 +10,8 @@ sums = {}
 for line in sys.stdin:
     line = re.sub( r'^\W+|\W+$', '', line )
     words = re.split(r"\W+", line)
-    count_lines = count_lines + 1
     
     for word in words:
         word = word.lower()
         if word == word_search:
-            print( word + "\t" + str(count_lines) )
+            print( word + "\t" + line )
